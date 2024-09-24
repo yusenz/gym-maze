@@ -78,16 +78,19 @@ class MazeEnv(gym.Env):
 
         if np.array_equal(self.maze_view.robot, self.maze_view.goal):
             reward = 1
-            done = True
+            terminated = True
+            truncated = False
         else:
             reward = -0.1/(self.maze_size[0]*self.maze_size[1])
-            done = False
+            terminated = False
+            # truncation is handled by gym.wrappers.TimeLimit
+            truncated = False
 
         self.state = self.maze_view.robot
 
         info = {}
 
-        return self.state, reward, done, info
+        return self.state, reward, terminated, truncated, info
 
     def reset(self):
         self.maze_view.reset_robot()
