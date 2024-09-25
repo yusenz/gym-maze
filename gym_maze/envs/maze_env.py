@@ -124,64 +124,64 @@ class MazeEnv(gym.Env):
 
 class MazeEnvSample5x5(MazeEnv):
 
-    def __init__(self, enable_render=True, penalty=0.1, penalty_normalize='size'):
-        super(MazeEnvSample5x5, self).__init__(maze_file="maze2d_5x5.npy", enable_render=enable_render, penalty=penalty, penalty_normalize=penalty_normalize)
+    def __init__(self, **kwargs):
+        super(MazeEnvSample5x5, self).__init__(maze_file="maze2d_5x5.npy", **kwargs)
 
 
 class MazeEnvRandom5x5(MazeEnv):
 
-    def __init__(self, enable_render=True, penalty=0.1, penalty_normalize='size'):
-        super(MazeEnvRandom5x5, self).__init__(maze_size=(5, 5), enable_render=enable_render, penalty=penalty, penalty_normalize=penalty_normalize)
+    def __init__(self, **kwargs):
+        super(MazeEnvRandom5x5, self).__init__(maze_size=(5, 5), **kwargs)
 
 
 class MazeEnvSample10x10(MazeEnv):
 
-    def __init__(self, enable_render=True, penalty=0.1, penalty_normalize='size'):
-        super(MazeEnvSample10x10, self).__init__(maze_file="maze2d_10x10.npy", enable_render=enable_render, penalty=penalty, penalty_normalize=penalty_normalize)
+    def __init__(self, **kwargs):
+        super(MazeEnvSample10x10, self).__init__(maze_file="maze2d_10x10.npy", **kwargs)
 
 
 class MazeEnvRandom10x10(MazeEnv):
 
-    def __init__(self, enable_render=True, penalty=0.1, penalty_normalize='size'):
-        super(MazeEnvRandom10x10, self).__init__(maze_size=(10, 10), enable_render=enable_render, penalty=penalty, penalty_normalize=penalty_normalize)
+    def __init__(self, **kwargs):
+        super(MazeEnvRandom10x10, self).__init__(maze_size=(10, 10), **kwargs)
 
 
 class MazeEnvSample3x3(MazeEnv):
 
-    def __init__(self, enable_render=True, penalty=0.1, penalty_normalize='size'):
-        super(MazeEnvSample3x3, self).__init__(maze_file="maze2d_3x3.npy", enable_render=enable_render, penalty=penalty, penalty_normalize=penalty_normalize)
+    def __init__(self, **kwargs):
+        super(MazeEnvSample3x3, self).__init__(maze_file="maze2d_3x3.npy", **kwargs)
 
 
 class MazeEnvRandom3x3(MazeEnv):
 
-    def __init__(self, enable_render=True, penalty=0.1, penalty_normalize='size'):
-        super(MazeEnvRandom3x3, self).__init__(maze_size=(3, 3), enable_render=enable_render, penalty=penalty, penalty_normalize=penalty_normalize)
+    def __init__(self, **kwargs):
+        super(MazeEnvRandom3x3, self).__init__(maze_size=(3, 3), **kwargs)
 
 
 class MazeEnvSample100x100(MazeEnv):
 
-    def __init__(self, enable_render=True, penalty=0.1, penalty_normalize='size'):
-        super(MazeEnvSample100x100, self).__init__(maze_file="maze2d_100x100.npy", enable_render=enable_render, penalty=penalty, penalty_normalize=penalty_normalize)
+    def __init__(self, **kwargs):
+        super(MazeEnvSample100x100, self).__init__(maze_file="maze2d_100x100.npy", **kwargs)
 
 
 class MazeEnvRandom100x100(MazeEnv):
 
-    def __init__(self, enable_render=True, penalty=0.1, penalty_normalize='size'):
-        super(MazeEnvRandom100x100, self).__init__(maze_size=(100, 100), enable_render=enable_render, penalty=penalty, penalty_normalize=penalty_normalize)
+    def __init__(self, **kwargs):
+        super(MazeEnvRandom100x100, self).__init__(maze_size=(100, 100), **kwargs)
 
 
 class MazeEnvRandom10x10Plus(MazeEnv):
 
-    def __init__(self, enable_render=True, penalty=0.1, penalty_normalize='size'):
-        super(MazeEnvRandom10x10Plus, self).__init__(maze_size=(10, 10), mode="plus", enable_render=enable_render, penalty=penalty, penalty_normalize=penalty_normalize)
+    def __init__(self, **kwargs):
+        super(MazeEnvRandom10x10Plus, self).__init__(maze_size=(10, 10), mode="plus", **kwargs)
 
 
 class MazeEnvRandom20x20Plus(MazeEnv):
 
-    def __init__(self, enable_render=True, penalty=0.1, penalty_normalize='size'):
-        super(MazeEnvRandom20x20Plus, self).__init__(maze_size=(20, 20), mode="plus", enable_render=enable_render, penalty=penalty, penalty_normalize=penalty_normalize)
+    def __init__(self, **kwargs):
+        super(MazeEnvRandom20x20Plus, self).__init__(maze_size=(20, 20), mode="plus", **kwargs)
 
 
 class MazeEnvRandom30x30Plus(MazeEnv):
-    def __init__(self, enable_render=True, penalty=0.1, penalty_normalize='size'):
-        super(MazeEnvRandom30x30Plus, self).__init__(maze_size=(30, 30), mode="plus", enable_render=enable_render, penalty=penalty, penalty_normalize=penalty_normalize)
+    def __init__(self, **kwargs):
+        super(MazeEnvRandom30x30Plus, self).__init__(maze_size=(30, 30), mode="plus", **kwargs)
