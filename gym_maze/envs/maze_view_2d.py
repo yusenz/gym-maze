@@ -17,7 +17,6 @@ class MazeView2D:
         self.clock = pygame.time.Clock()
         self.__game_over = False
         self.__enable_render = enable_render
-        self.__display_handle = display(None, display_id=True)
 
         # Load a maze
         if maze_file_path is None:
@@ -136,8 +135,8 @@ class MazeView2D:
 
             if mode == "human":
                 pygame.display.flip()
-                pygame.image.save(self.screen, "maze.jpeg")
-                self.__display_handle.update(Image("maze.jpeg"))
+                pygame.image.save(self.screen, "maze.png")
+                display(Image(filename="maze.png"))
 
 
             return np.flipud(np.rot90(pygame.surfarray.array3d(pygame.display.get_surface())))
