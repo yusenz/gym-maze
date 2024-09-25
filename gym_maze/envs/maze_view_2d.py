@@ -2,7 +2,6 @@ import pygame
 import random
 import numpy as np
 import os
-from IPython.display import Image, display
 
 
 class MazeView2D:
@@ -135,8 +134,6 @@ class MazeView2D:
 
             if mode == "human":
                 pygame.display.flip()
-                pygame.image.save(self.screen, "maze.png")
-                display(Image(filename="maze.png"))
 
 
             return np.flipud(np.rot90(pygame.surfarray.array3d(pygame.display.get_surface())))
